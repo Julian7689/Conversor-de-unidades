@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class conversor {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+      
+        System.out.println("Ingresa el valor que quieres transformar (El valor va estar en CM) : ");
+        int centimientro = scanner.nextInt();
+        
+        double yardas = (centimientro/91.44);
+        double kilometros = centimientro * 1000;
+        double lenguas = centimientro * 482.803;
+        double milimetros = 10/centimientro;
+        System.out.println("El valor " + centimientro + "Paso a yardas a : "+ yardas +" y luego a kilometros " + kilometros + " tambien a lenguas " + lenguas + "y por ultimo a " + milimetros );
+      
+        scanner.close();
+    }
+}
